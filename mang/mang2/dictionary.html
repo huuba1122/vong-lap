@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let engs = ['i', 'dog', 'you'];
+    let viets =['tôi', 'chó', 'bạn'];
+    let str = prompt('nhập');
+
+    // // let index = -1;
+    // document.write(str +'<br>');
+    // document.write(engs[1]);
+    // if (str === engs[1]) {
+    //
+    //     alert(viets[1]);}
+    let flag = true;
+    let index = -1;
+    for (let i = 0; i < engs.length ; i++) {
+        if (str === engs[i]) {
+            flag = true;
+            index = i;
+            break;
+        }
+         else {
+            flag = false;
+
+        }
+    }if (flag){
+        alert(viets[index]);
+    }else {
+        alert('khong tim thay')
+    }
+    // for (let j = 0; i < viets.length ; i++) {
+    //
+    // }
+
+
+
+
+</script>
+</body>
+</html>

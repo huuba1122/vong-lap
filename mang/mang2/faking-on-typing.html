@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3> Type anthing slowly </h3>
+
+<textarea cols="40" rows="10" onkeyup="typeText()" id="text-area">
+
+</textarea>
+
+
+<script>
+
+    let arr = [];
+    let text = "";
+    arr[0] = 'Đ';
+    arr[1] = 'ố';
+    arr[2] = ' ';
+    arr[3] = 'M';
+    arr[4] = 'à';
+    arr[5] = 'y';
+    arr[6] = ' ';
+    arr[7] = 'B';
+    arr[8] = 'i';
+    arr[9] = 'ế';
+    arr[10] = 't';
+    arr[11] = ' ';
+    arr[12] = 'T';
+    arr[13] = 'a';
+    arr[14] = 'o';
+    arr[15] = ' ';
+    arr[16] = 'L';
+    arr[17] = 'à';
+    arr[18] = ' ';
+    arr[19] = 'A';
+    arr[20] = 'i';
+    arr[21] = ' ';
+    arr[22] = '?';
+    arr[23] = '?';
+
+    function typeText(){
+
+        let inputtext = document.getElementById('text-area').value;
+        let i = inputtext.length;
+        if (i>0){
+            for (let j = 0; j <= i ; j++) {
+                text += arr[j];
+                if(i > 23){
+                    document.getElementById('text-area').value = "";
+                    text = "";
+                }
+            }
+        }
+        document.getElementById('text-area').value = text;
+        text = "";
+        setTimeout('typeText()', 500);
+    }
+</script>
+</body>
+</html>

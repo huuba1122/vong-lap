@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A = [-3, 5, 1, 3, 2, 10];
+    // console.log(A.reverse());
+    // console.log(A);
+    for (let j = 0; j <6 ; j++) {
+        let number = +prompt('nhập vào số cần lấy ra');
+        for (let i = 1; i <= A.length; i++) {
+            if(number == A[i-1]){
+                alert('giá trị '+ A[i-1] + ' là phần tử thứ ' + i) ;
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

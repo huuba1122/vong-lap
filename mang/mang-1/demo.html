@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    table{
+        border: 1px solid red;
+    }
+    td{
+        border: 1px solid blue;
+    }
+</style>
+
+<body>
+
+the p
+<!--<p id="aaaaa"></p>-->
+<p id="carogame"/>
+
+<script>
+    let b = document.getElementById("carogame");
+
+    let board = [];
+    let data = "";
+    for (let i = 0; i < 5; i++) {
+        board[i] = [0,0,0,0,0];
+    }
+
+    for (let i = 0; i < 5 ; i++) {
+        data += "<br/>";
+        for (let j = 0; j < 5; j++) {
+            data += board[i][j] +'&nbsp;' ;
+        }
+    }
+
+    data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
+    b.innerHTML = data;
+</script>
+<!--<table>-->
+<!--    <script>-->
+<!--        let a = '';-->
+<!--        let i =1;-->
+<!--        while(i <= 10) {-->
+<!--            let j =1;-->
+<!--            a = "<tr>";-->
+<!--            while(j <3) {-->
+<!--                a ="<td>" + i * j + "</td>";-->
+<!--                j++;-->
+<!--            }-->
+<!--            a +="</tr>";-->
+<!--            document.write(a);-->
+<!--            i++;-->
+<!--        }-->
+<!--    </script>-->
+<!--</table>-->
+
+</body>
+</html>
